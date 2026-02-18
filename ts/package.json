@@ -7,12 +7,14 @@
   "type": "module",
   "scripts": {
     "dev": "tsx index.ts",
-    "build-run": "npx tsc && node dist/index.js",
-    "tsx": "tsx index.ts"
+    "build-run": "npx tsc && node dist/bundle.js",
+    "tsx": "tsx index.ts",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
+    "@tsconfig/node22": "^22.0.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+    "typescript": "^5.9.3"
   }
 }
