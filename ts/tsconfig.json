@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
-      "target": "ES2022",
+      "target": "ES2022", // transpiles to this version of JavaScript
       "module": "NodeNext",
       "moduleResolution": "NodeNext",
+      "lib": ["ES2022", "DOM"],
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
@@ -10,7 +11,7 @@
       "outDir": "./dist",
       "rootDir": "."
     },
-    "include": ["src/**/*", "./index.ts"],
+    "include": ["src/**/*", "./index.ts", "./hello.ts"],
     "exclude": ["node_modules", "./dist"],
     "extends": "@tsconfig/node22/tsconfig.json"
   }

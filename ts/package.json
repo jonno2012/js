@@ -6,15 +6,23 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "dev": "tsx index.ts",
+    "dev": "npx tsx index.ts",
     "build-run": "npx tsc && node dist/bundle.js",
     "tsx": "tsx index.ts",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.5",
+    "@types/express": "^5.0.6",
     "ts-node": "^10.9.2",
     "tsx": "^4.7.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "imports": {
+    "#interfaces/*": "./src/interfaces/*.ts",
+    "#types/*": "./src/types/*.ts"
   }
 }
